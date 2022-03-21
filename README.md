@@ -1,9 +1,15 @@
-## back-end
+# Docker Compose exercise 2
+
+This is a Docker compose exercise made for the PXL Docker Compose course.
+
+## Project structure
+
+## backend
 
 A [node.js](https://nodejs.org/en/) [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) api based on [mongoose](https://mongoosejs.com/), which requires a [mongodb](https://www.mongodb.com/) instance.
 The application will search for a mongodb server with the host address 'mongo' and access it on port 27017.
 
-## front-end
+## frontend
 
 A react-based UI will look for the backend api on http://localhost:8080. The UI will be served to the user on port 80 by [ngnix](https://www.nginx.com/).
 
