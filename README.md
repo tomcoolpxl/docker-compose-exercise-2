@@ -22,7 +22,7 @@ Make sure that:
   1. mongodb server
   2. backend server
   3. frontend server
-- the mongodb data is stored on a volume nasmed 'data'.
+- the mongodb data is stored on a volume named 'data'.
 
 ### Platinum level
 
