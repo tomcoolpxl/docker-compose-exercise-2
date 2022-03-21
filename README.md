@@ -11,7 +11,7 @@ The application will search for a mongodb server with the host address 'mongo' a
 
 ## frontend
 
-A react-based UI will look for the backend api on http://localhost:8080. The UI will be served to the user on port 80 by [ngnix](https://www.nginx.com/).
+A react-based UI will look for the _backend_ api on http://localhost:8080. The UI itself will be served to the user on port 80 by [ngnix](https://www.nginx.com/).
 
 ## Exercise
 
