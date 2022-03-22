@@ -7,7 +7,22 @@ This is a Docker compose exercise made for the PXL Docker Compose course.
 ## backend
 
 A [node.js](https://nodejs.org/en/) [REST](https://en.wikipedia.org/wiki/Representational_state_transfer) api based on [mongoose](https://mongoosejs.com/), which requires a [mongodb](https://www.mongodb.com/) instance.
-The application will search for a mongodb server with the host address 'mongo' and access it on port 27017.
+
+### backend environment variables
+
+```
+MONGO_URL=mongodb://db:27017/mongo-test
+```
+
+The api server will search for a mongodb server with the host address 'db' and access it on port 27017.
+
+The name of the api database is mongo-test and should not be changed.
+
+```
+APP_PORT=80
+```
+
+The REST api will be served on port 80.
 
 ## frontend
 
@@ -15,14 +30,15 @@ A react-based UI will look for the backend api on http://localhost:8080. The UI 
 
 ## Exercise
 
-Make sure that:
+Create a Docker compose file and make sure that:
 
-- the solution is running in docker compose and the UI is accessible on http://localhost:8880.
-- the startup sequence is correct:
+- the application is running on docker compose and the UI is accessible through http://localhost:8880.
+- the startup sequence is as follows:
   1. mongodb server
   2. backend server
   3. frontend server
-- the mongodb data is stored on a volume nasmed 'data'.
+- the mongodb data is stored on a docker volume named 'data'.
+- environment variables are read from a file.
 - two separate networks exists so the frontend server cannot reach the database server directly.
 
 ### Platinum level
