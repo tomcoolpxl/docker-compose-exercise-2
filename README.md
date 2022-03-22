@@ -46,3 +46,7 @@ Create a Docker compose file and make sure that:
 The backend service starts only when the mongodb database **service** is up and running.
 
 Tip: [docker compose healthcheck](https://github.com/compose-spec/compose-spec/blob/master/spec.md#healthcheck)
+
+### Diamond level
+
+Show real-time container statistics (CPU, memory, network, filesystem) on http://localhost:9999
