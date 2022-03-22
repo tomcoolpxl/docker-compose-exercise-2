@@ -23,6 +23,7 @@ Make sure that:
   2. backend server
   3. frontend server
 - the mongodb data is stored on a volume nasmed 'data'.
+- two separate networks exists so the frontend server cannot reach the database server directly.
 
 ### Platinum level
 
